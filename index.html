@@ -11,9 +11,9 @@
 </head>
 
 <body>
-   <header>
+   <header class="border-b-[1px] border-[#FAC800]">
       <div class="bg-[#301900] text-white">
-         <ul class="py-4 flex items-center justify-evenly text-base">
+         <ul class="py-4 flex items-center justify-center gap-[80px] text-base">
             <li><a href="#" class="flex gap-3 font-semibold"><img src="./img/header-top-1-img.svg" alt="error">AUS
                   ÖSTERREICH</a></li>
             <li><a href="#" class="font-semibold"><i class="pr-3 fa-solid fa-dollar"></i>BIS ZU 60% GÜNSTIGER</a></li>
@@ -21,19 +21,115 @@
             <li><a href="#" class="font-semibold"><i class="pr-3 fa-solid fa-user-clock"></i>40.000+ KUNDEN</a></li>
          </ul>
       </div>
-      <nav class="flex items-center justify-around bg-[#FAF4EB] py-5">
+      <nav class="flex items-center justify-evenly bg-[#FAF4EB] py-5">
          <img src="./img/logo.svg" alt="logo">
          <ul class="flex items-center gap-20 text-sm font-normal">
-            <li><a href="#" class="mr-7">FUNKTIONEN</a></li>
-            <li><a href="#" class="mr-7">PREISE</a></li>
-            <li><a href="#" class="mr-7">REVIEWS</a></li>
-            <li><a href="#" class="mr-7">VERGLEICH</a></li>
-            <li><a href="#" class="mr-7">faq</a></li>
+            <li><a href="#">FUNKTIONEN</a></li>
+            <li><a href="#">PREISE</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">VERGLEICH</a></li>
+            <li><a href="#">faq</a></li>
          </ul>
-         <a href="#"><button class="text-base font-bold py-3 px-5 border-2 rounded-full border-[#FAC800] text-[#FAC800]">Beratung Vereinbaren<i class="pl-2 fa-solid fa-arrow-right"></i></button></a>
+         <a href="#">
+            <button class="text-base font-bold py-3 px-5 border-2 rounded-full border-[#FAC800] text-[#FAC800]">Beratung
+               Vereinbaren<i class="pl-2 fa-solid fa-arrow-right"></i>
+            </button>
+         </a>
       </nav>
    </header>
-
+   <!-- HERO SECTION -->
+   <section class="flex justify-center pt-14 pb-[79px] gap-[65px] items-center">
+      <div class="hero-sec-left-div">
+         <div class="flex gap-2 text-sm"><img src="./img/Star.svg" alt="Star img">
+            <p>Die <strong>#1</strong> bei <strong>40.000+ Unternehmen</strong></p>
+         </div>
+         <h1 class="text-5xl font-bold pt-2 w-[619px] leading-[64px]">Sie sind von der ISDN Abschaltung betroffen?</h1>
+         <p class="mt-4 text-xl w-[619px] leading-[32px]">Wechseln Sie in nur 14 Tagen zu moderner Cloud-Telefonie –
+            ohne hohe Kosten, ohne
+            Stress und ohne Unterbrechungen.
+         </p>
+         <div class="pt-6">
+            <div class="flex items-center"><img src="./img/right-tick.svg" alt="right-tick">
+               <p class="pl-2 text-xl">Ihre Telefonnummern <strong>bleiben erhalten</strong> </p>
+            </div>
+            <div class="flex items-center"><img src="./img/right-tick.svg" alt="right-tick">
+               <p class="pl-2 text-xl">Keine <strong>teuren Anschaffungskosten</strong></p>
+            </div>
+            <div class="flex items-center"><img src="./img/right-tick.svg" alt="right-tick">
+               <p class="pl-2 text-xl">Betreuung durch unser<strong>österreichisches Team</strong> </p>
+            </div>
+         </div>
+         <div class="mt-8 p-6 border-[#FAC800] border-[1px] rounded-3xl">
+            <p class="text-base w-[500px] leading-[24px]">"Unsere ISDN-Leitung wurde mit nur 6 Wochen Frist gekündigt.
+               Hostprofis hat unser
+               neues System in nur 14 Tagen eingerichtet und wir konnten alle Nummern behalten. Keine Ausfallzeit, kein
+               Stress."
+            </p>
+            <div class="pt-3 flex gap-4">
+               <img src="./img/profile-logo-one.svg" alt="profile-logo-one">
+               <div>
+                  <h5 class="text-base font-bold">Gregor Zeisl</h5>
+                  <img src="./img/Star.svg" alt="Star">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="hero-sec-right-div bg-[#FAF7EB] border-[1px] border-[#FAC800] rounded-2xl py-9 px-8">
+         <h2 class="w-[466px] text-[28px] font-extrabold text-center leading-[35px]">
+            Jetzt 100% kostenlos und unverbindlich beraten lassen!</h2>
+         <form class="mt-8">
+            <div class="hero-sec-search-line-one flex gap-3">
+               <div class="flex flex-col gap-2 ">
+                  <label class="text-sm text-[#344054]">Vor- und Nachname</label>
+                  <input class="border-2 border-gray-300 py-3 px-4 text-sm rounded-3xl bg-white text-gray-400 w-[227px]"
+                     type="search" placeholder="Max Mustermann">
+               </div>
+               <div class="flex flex-col gap-2 ">
+                  <label class="text-sm text-[#344054]">Firmenname</label>
+                  <input class="border-2 border-gray-300 py-3 px-4 text-sm rounded-3xl bg-white text-gray-400 w-[227px]"
+                     type="search" placeholder="Mustermann GmbH">
+               </div>
+            </div>
+            <div class="hero-sec-search-line-two flex gap-3 mt-3">
+               <div class="flex flex-col gap-2 ">
+                  <label class="text-sm text-[#344054]">Email</label>
+                  <input class="border-2 border-gray-300 py-3 px-4 text-sm rounded-3xl bg-white text-gray-400 w-[227px]"
+                     type="email" placeholder="max@mustermann.at">
+               </div>
+               <div class="flex flex-col gap-2 ">
+                  <label class="text-sm text-[#344054]">Telefonnummer</label>
+                  <input class="border-2 border-gray-300 py-3 px-4 text-sm rounded-3xl bg-white text-gray-400 w-[227px]"
+                     type="number" placeholder="+43 123456789">
+               </div>
+            </div>
+            <div class="hero-sec-search-line-three flex flex-col gap-2 mt-3 ">
+               <label>Wie viele Mitarbeiter hat Ihr Unternehmen?</label>
+               <select class="bg-white text-gray-400 py-3 px-6 border-2 border-gray-300 rounded-3xl">
+                  <option value="a">Wählen Sie die Anzahl Ihrer Mitarbeiter</option>
+                  <option value="b">Lorem, ipsum dolor sit amet consectetur</option>
+                  <option value="c">Wählen Sie die Anzahl Ihrer Mitarbeiter</option>
+                  <option value="d">Lorem, ipsum dolor sit amet consectetur</option>
+               </select>
+            </div>
+         </form>
+         <button
+            class="text-white text-base font-extrabold text-center bg-[#FAC800] py-4 rounded-full mt-9 w-[466px] shadow-lg shadow-black-500/50">
+            Jetzt Kostenlos Beraten Lassen
+         </button>
+         <div class="flex gap-2 items-center mt-4 justify-center text-gray-400">
+            <i class="fa-solid fa-lock"></i>
+            <p class="text-base font-medium">Ihre Daten sind sicher – Keine Werbung!</p>
+         </div>
+         <div class="flex gap-[14px] justify-center mt-11">
+            <img src="./img/hero-card-logo-one.svg" alt="hero-card-logo-one">
+            <img src="./img/hero-card-logo-two.svg" alt="hero-card-logo-two">
+            <img src="./img/hero-card-logo-three.svg" alt="hero-card-logo-three">
+            <img src="./img/hero-card-logo-four.svg" alt="hero-card-logo-four">
+            <img src="./img/hero-card-logo-five.svg" alt="hero-card-logo-five">
+            
+         </div>
+      </div>
+   </section>
 
 </body>
 
